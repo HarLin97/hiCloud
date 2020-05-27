@@ -1,0 +1,8 @@
+server:
+  port: 8080
+spring:
+  elasticsearch:
+    rest:
+      uris: http://173.249.38.245:9200
+      username: elastic
+      password:

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hi-cloud-system-app" />
+        <module name="hi-cloud-dass" />
+        <module name="hi-cloud-search-service" />
+        <module name="hi-cloud-system-service" />
+        <module name="hi-cloud-file" />
+        <module name="hi-cloud-common" />
+        <module name="hi-cloud-gateway" />
+        <module name="hi-cloud-auth-oauth" />
+        <module name="hi-cloud-auth-sdk" />
+        <module name="hi-cloud-search-es" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hi-cloud-auth-center" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hi-cloud-auth" options="-parameters" />
+      <module name="hi-cloud-auth-center" options="-parameters" />
+      <module name="hi-cloud-auth-oauth" options="-parameters" />
+      <module name="hi-cloud-auth-sdk" options="-parameters" />
+      <module name="hi-cloud-common" options="-parameters" />
+      <module name="hi-cloud-dass" options="-parameters" />
+      <module name="hi-cloud-file" options="-parameters" />
+      <module name="hi-cloud-gateway" options="-parameters" />
+      <module name="hi-cloud-search" options="-parameters" />
+      <module name="hi-cloud-search-es" options="-parameters" />
+      <module name="hi-cloud-search-service" options="-parameters" />
+      <module name="hi-cloud-system" options="-parameters" />
+      <module name="hi-cloud-system-app" options="-parameters" />
+      <module name="hi-cloud-system-service" options="-parameters" />
+    </option>
+  </component>
+</project>

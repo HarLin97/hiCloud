@@ -1,0 +1,29 @@
+#server:
+#  port: 10003
+#spring:
+#  application:
+#    name: hi-cloud-gateway
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          #          enabled: true
+#          lowerCaseServiceId: true
+#      routes:
+#        - id: hi-cloud-auth
+#          uri: lb://hi-cloud-auth
+#          predicates:
+#            - Path=/user/**
+#          #            - Header=Cookie,Set-Cookie
+#          filters:
+#            - SwaggerHeaderFilter
+#            - StripPrefix=1
+#
+#    nacos:
+#      server-addr: 172.21.219.237:8848
+#
+#
+#
+#logging:
+#  level:
+#    org.springframework:cloud.gateway: debug

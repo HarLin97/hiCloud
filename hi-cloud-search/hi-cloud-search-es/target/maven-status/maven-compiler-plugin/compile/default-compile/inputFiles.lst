@@ -1,0 +1,6 @@
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\EsApplication.java
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\controller\ElasticController.java
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\repoistry\ElasticRepository.java
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\service\impl\ElasticServiceImpl.java
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\service\IElasticService.java
+D:\hi-cloud\hi-cloud-search\hi-cloud-search-es\src\main\java\com\fuchangling\search\es\pojo\DocBean.java
