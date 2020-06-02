@@ -15,6 +15,7 @@
             <groupId>com.fuchangling</groupId>
             <artifactId>hi-cloud-common</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.fuchangling</groupId>
             <artifactId>hi-cloud-system-service</artifactId>

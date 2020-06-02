@@ -3,3 +3,18 @@ server:
 spring:
   application:
     name: oauth2-server
+  cloud:
+    nacos:
+      server-addr: 173.249.38.245:8848
+      username: nacos
+      password: nacos
+      config:
+        context-path: /nacos
+  redis:
+    host: 173.249.38.245
+dubbo:
+  registry:
+    address: spring-cloud://localhost
+  protocol:
+    name: dubbo
+    port: -1

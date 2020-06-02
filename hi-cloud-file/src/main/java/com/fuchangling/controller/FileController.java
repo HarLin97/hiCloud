@@ -1,6 +1,6 @@
 package com.fuchangling.controller;
 
-import com.fuchangling.common.api.vo.Result;
+import com.fuchangling.common.api.vo.ResultVO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,8 +17,8 @@ public class FileController {
     /**
      * 小文件上传
      */
-    public Result<Object> upload(MultipartFile file) {
-        return new Result<>();
+    public ResultVO<Object> upload(MultipartFile file) {
+        return new ResultVO<>();
     }
 
     /**

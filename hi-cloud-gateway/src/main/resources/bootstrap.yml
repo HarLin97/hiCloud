@@ -1,29 +1,34 @@
-#server:
-#  port: 10003
-#spring:
-#  application:
-#    name: hi-cloud-gateway
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          #          enabled: true
-#          lowerCaseServiceId: true
-#      routes:
-#        - id: hi-cloud-auth
-#          uri: lb://hi-cloud-auth
-#          predicates:
-#            - Path=/user/**
-#          #            - Header=Cookie,Set-Cookie
-#          filters:
-#            - SwaggerHeaderFilter
-#            - StripPrefix=1
-#
-#    nacos:
-#      server-addr: 172.21.219.237:8848
-#
-#
-#
-#logging:
-#  level:
-#    org.springframework:cloud.gateway: debug
+server:
+  port: 10003
+spring:
+  application:
+    name: hi-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+
+    nacos:
+      server-addr: 173.249.38.245:8848
+      username: nacos
+      password: nacos
+      config:
+        context-path: /nacos
+
+  redis:
+    host: 173.249.38.245
+
+logging:
+  level:
+    org.springframework:cloud.gateway: debug
+
+dubbo:
+  registry:
+    address: spring-cloud://localhost
+  protocol:
+    name: dubbo
+    port: -1
+
+seata:
+  enabled: false
